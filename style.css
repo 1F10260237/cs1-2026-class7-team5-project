@@ -1,0 +1,59 @@
+body{
+    margin:0;
+}
+
+.container{
+    display:flex;
+}
+
+.header{
+    display:flex;
+}
+
+.sidebar{
+    display:flex;
+    flex-direction: column;
+
+    width:200px;
+    height:100vh;
+
+    background: hotpink;
+}
+
+.sidebar-title{
+    font-size: 20px;
+
+    color:white;
+}
+
+.sidebar-btn-column{
+    display:flex;
+    flex-direction: column;
+
+    width:100%;
+
+    margin-top:20px;
+}
+
+.sidebar-btn{
+    background:none;
+    border:none;
+
+    color:white;
+
+    font-size:20px;
+
+    gap: 10px;
+}
+
+.page{
+    display:none;
+}
+
+.page.open{
+    display:block;
+}
+
+#top{
+    display:block;
+}

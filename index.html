@@ -7,6 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="script.js"></script>
+    <div class="container">
+
+        <aside class="sidebar">
+            <div class="sidebar-title">カービィ(switch編)</div>
+
+            <div class="sidebar-btn-column">
+                <button class="sidebar-btn" id="top-btn" onclick="openTop()">トップ</button>
+                <button class="sidebar-btn" id="detail-btn" onclick="openDetail()">カービィってなに？</button>
+                <button class="sidebar-btn" id="accordion-btn" onclick="openAccordionMenu()">作品一覧　V</button>
+            </div>
+        </aside>
+
+        <main class="main">
+            <section class="page open" id="top">
+                <h1>トップ</h1>
+            </section>
+
+            <section class="page" id="detail">
+                <h1>カービィってなに？</h1>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </div>
 </body>
 </html>
