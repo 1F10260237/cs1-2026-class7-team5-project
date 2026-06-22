@@ -4,20 +4,11 @@ function removeOpen() {
     });
 }
 
-function openTop(button) {
+function openSection(id,button) {
     removeOpen();
 
-    const top = document.getElementById("top");
+    const top = document.getElementById(id);
     top.classList.add("open");
-
-    sidebarButtonActive(button);
-}
-
-function openDetail(button) {
-    removeOpen();
-
-    const detail = document.getElementById("detail");
-    detail.classList.add("open");
 
     sidebarButtonActive(button);
 }
@@ -27,4 +18,8 @@ function sidebarButtonActive(button) {
         btn.classList.remove("active");
     });
     button.classList.add("active");
+}
+
+function toggleAccordion() {
+    document.getElementById("accordion-menu").classList.toggle("open");
 }

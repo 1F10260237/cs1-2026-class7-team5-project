@@ -41,31 +41,31 @@ body{
 }
 
 .sidebar-btn{
-    display:flex;
-    align-items:center;
-    gap:10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
-    background:none;
-    border:none;
+    width: 100%;
+    height: 50px;
 
-    color:white;
+    padding-left: 20px;
+    padding-right: 20px;
 
-    font-size:20px;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 20px;
 
-    cursor:pointer;
-
-    width:100%;
-    height:50px;
-    
-    padding-left:20px;
-
-    transition:0.2s;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
+.accordion-item:hover,
 .sidebar-btn:hover{
     background:#FFFFFF26;
 }
 
+.accordion-item.active,
 .sidebar-btn.active{
     background:white;
     color:hotpink;
@@ -79,7 +79,43 @@ body{
     display:block;
 }
 
+.accordion-menu{
+    display:flex;
+    flex-direction:column;
+
+    max-height:0;
+    overflow:hidden;
+
+    transition:0.4s;
+}
+
+.accordion-menu.open{
+    max-height:500px;
+}
+
+.accordion-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+    height: 50px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border: none;
+    background: none;
+    color: white;
+    font-size: 15px;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
 .main{
     flex:1;
     padding:40px;
+
+    background:gainsboro;
 }

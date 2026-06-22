@@ -14,24 +14,38 @@
             <div class="sidebar-title">カービィ(switch編)</div>
 
             <div class="sidebar-btn-column">
-                <button class="sidebar-btn active" id="top-btn" onclick="openTop(this)">
+                <button class="sidebar-btn active" id="top-btn" onclick="openSection('top',this)">
                     <span class="material-symbols-outlined">
                         home
                     </span>
                     トップ
                 </button>
-                <button class="sidebar-btn" id="detail-btn" onclick="openDetail(this)">
+                <button class="sidebar-btn" id="detail-btn" onclick="openSection('detail',this)">
                     <span class="material-symbols-outlined">
                         info
                     </span>
                     カービィってなに？
                 </button>
-                <button class="sidebar-btn">
+                <button class="sidebar-btn" onclick="toggleAccordion()">
                     <span class="material-symbols-outlined">
                         expand_more
                     </span>
                     作品一覧
                 </button>
+
+                <div class="accordion-menu" id="accordion-menu">
+
+                    <button class="accordion-item">星のカービィ ディスカバリー</button>
+                    <button class="accordion-item">カービィのエアライダー</button>
+                    <button class="accordion-item">星のカービィ Wii デラックス</button>
+                    <button class="accordion-item">星のカービィ スターアライズ</button>
+                    <button class="accordion-item">カービィ ファイターズ2</button>
+                    <button class="accordion-item">カービィのグルメフェス</button>
+                    <button class="accordion-item">スーパーカービィハンターズ</button>
+                    <button class="accordion-item">カービィ ファイターズ2</button>
+
+                </div>
+
             </div>
         </aside>
 
