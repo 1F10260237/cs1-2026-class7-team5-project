@@ -4,16 +4,27 @@ function removeOpen() {
     });
 }
 
-function openTop() {
+function openTop(button) {
     removeOpen();
 
     const top = document.getElementById("top");
     top.classList.add("open");
+
+    sidebarButtonActive(button);
 }
 
-function openDetail() {
+function openDetail(button) {
     removeOpen();
 
     const detail = document.getElementById("detail");
     detail.classList.add("open");
+
+    sidebarButtonActive(button);
+}
+
+function sidebarButtonActive(button) {
+    document.querySelectorAll(".sidebar-btn").forEach(btn => {
+        btn.classList.remove("active");
+    });
+    button.classList.add("active");
 }
