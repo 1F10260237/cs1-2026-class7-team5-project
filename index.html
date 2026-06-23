@@ -27,22 +27,21 @@
                     カービィってなに？
                 </button>
                 <button class="sidebar-btn" onclick="toggleAccordion()">
-                    <span class="material-symbols-outlined">
-                        expand_more
+                    <span id="accordion-icon" class="material-symbols-outlined">
+                        chevron_right
                     </span>
                     作品一覧
                 </button>
 
                 <div class="accordion-menu" id="accordion-menu">
 
-                    <button class="accordion-item">星のカービィ ディスカバリー</button>
-                    <button class="accordion-item">カービィのエアライダー</button>
-                    <button class="accordion-item">星のカービィ Wii デラックス</button>
-                    <button class="accordion-item">星のカービィ スターアライズ</button>
-                    <button class="accordion-item">カービィ ファイターズ2</button>
-                    <button class="accordion-item">カービィのグルメフェス</button>
-                    <button class="accordion-item">スーパーカービィハンターズ</button>
-                    <button class="accordion-item">カービィ ファイターズ2</button>
+                    <button class="accordion-item" onclick="openSection('discovery',this)">星のカービィ ディスカバリー</button>
+                    <button class="accordion-item" onclick="openSection('airrider',this)">カービィのエアライダー</button>
+                    <button class="accordion-item" onclick="openSection('wii-deluxe',this)">星のカービィ Wii デラックス</button>
+                    <button class="accordion-item" onclick="openSection('star-arise',this)">星のカービィ スターアライズ</button>
+                    <button class="accordion-item" onclick="openSection('fighters2',this)">カービィ ファイターズ2</button>
+                    <button class="accordion-item" onclick="openSection('gourmet-fes',this)">カービィのグルメフェス</button>
+                    <button class="accordion-item" onclick="openSection('hunters',this)">スーパーカービィハンターズ</button>
 
                 </div>
 
@@ -57,6 +56,35 @@
             <section class="page" id="detail">
                 <h1>カービィってなに？</h1>
             </section>
+
+            <section class="page" id="discovery">
+                <h1>星のカービィ ディスカバリー</h1>
+            </section>
+
+            <section class="page" id="airrider">
+                <h1>カービィのエアライダー</h1>
+            </section>
+
+            <section class="page" id="wii-deluxe">
+                <h1>星のカービィ Wii デラックス</h1>
+            </section>
+
+            <section class="page" id="star-arise">
+                <h1>星のカービィ スターアライズ</h1>
+            </section>
+
+            <section class="page" id="fighters2">
+                <h1>カービィ ファイターズ2</h1>
+            </section>
+
+            <section class="page" id="gourmet-fes">
+                <h1>カービィのグルメフェス</h1>
+            </section>
+
+            <section class="page" id="hunters">
+                <h1>スーパーカービィハンターズ</h1>
+            </section>
+
         </main>
 
         <script src="script.js"></script>
