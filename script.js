@@ -4,10 +4,6 @@ function removeOpen() {
     });
 }
 
-function closeAccordion() {
-    connst 
-}
-
 function openSection(id,button) {
     removeOpen();
 
@@ -18,15 +14,9 @@ function openSection(id,button) {
 }
 
 function sidebarButtonActive(button) {
-    document.querySelectorAll(".sidebar-btn, .accordion-item").forEach(btn => {
+    document.querySelectorAll(".sidebar-btn").forEach(btn => {
         btn.classList.remove("active");
     });
 
     button.classList.add("active");
-}
-
-function toggleAccordion() {
-    document.getElementById("accordion-menu").classList.toggle("open");
-
-    document.getElementById("accordion-icon").classList.toggle("open");
 }

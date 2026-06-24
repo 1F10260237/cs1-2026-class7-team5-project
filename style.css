@@ -14,14 +14,10 @@ body{
     width:300px;
     height:100vh;
 
-    background:linear-gradient(
-        180deg,
-        #ff69b4,
-        #db2c84
-    );
-
     overflow-y:auto;
     overflow-x: hidden;
+
+    background:hotpink;
 }
 
 .sidebar-title{
@@ -67,7 +63,6 @@ body{
     background:#FFFFFF26;
 }
 
-.accordion-item.active,
 .sidebar-btn.active{
     background:white;
     color:hotpink;
@@ -82,57 +77,10 @@ body{
     display:block;
 }
 
-.accordion-menu{
-    display:flex;
-    flex-direction:column;
-
-    max-height:0;
-    overflow: hidden;
-
-    transition:0.7s;
-}
-
-.accordion-menu.open{
-    max-height:500px;
-}
-
-.accordion-item{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    width: 100%;
-    height: 50px;
-
-    padding-left:40px;
-    padding-right: 20px;
-
-    border: none;
-    background: none;
-    color: white;
-    font-size: 15px;
-
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.accordion-item:hover{
-    background:#FFFFFF26;
-}
-
-.accordion-item.active,
 .sidebar-btn.active{
     background:white;
     color:hotpink;
     transform: translateX(5px);
-}
-
-.material-symbols-outlined{
-    transition:0.3s;
-}
-
-.material-symbols-outlined.open{
-    transform:rotate(90deg);
 }
 
 .main{
