@@ -11,7 +11,7 @@ body{
 }
 
 .sidebar{
-    width:280px;
+    width:300px;
     height:100vh;
 
     background:linear-gradient(
@@ -21,6 +21,7 @@ body{
     );
 
     overflow-y:auto;
+    overflow-x: hidden;
 }
 
 .sidebar-title{
@@ -62,7 +63,6 @@ body{
     transition: 0.2s;
 }
 
-.accordion-item:hover,
 .sidebar-btn:hover{
     background:#FFFFFF26;
 }
@@ -71,7 +71,7 @@ body{
 .sidebar-btn.active{
     background:white;
     color:hotpink;
-    transform:translateX(10px);
+    transform: translateX(10px);
 }
 
 .page{
@@ -87,9 +87,9 @@ body{
     flex-direction:column;
 
     max-height:0;
-    overflow:hidden;
+    overflow: hidden;
 
-    transition:0.4s;
+    transition:0.7s;
 }
 
 .accordion-menu.open{
@@ -114,6 +114,17 @@ body{
 
     cursor: pointer;
     transition: 0.2s;
+}
+
+.accordion-item:hover{
+    background:#FFFFFF26;
+}
+
+.accordion-item.active,
+.sidebar-btn.active{
+    background:white;
+    color:hotpink;
+    transform: translateX(5px);
 }
 
 .material-symbols-outlined{
