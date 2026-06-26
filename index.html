@@ -30,12 +30,22 @@
                     カービィってなに？
                 </button>
 
-                <button class="sidebar-btn" onclick="openSection('list',this)">
-                    <span class="material-symbols-outlined">
-                        menu_book
+                <button class="sidebar-btn" onclick="openAccordionMenu(this)">
+                    <span class="material-symbols-outlined arrow">
+                        chevron_forward
                     </span>
                     作品一覧
                 </button>
+
+                <div class="accordion-menu">
+                    <button class="accordion-item" onclick="openSection('star-arise',this)">星のカービィ スターアライズ</button>
+                    <button class="accordion-item" onclick="openSection('hunters',this)">スーパーカービィ ハンターズ</button>
+                    <button class="accordion-item" onclick="openSection('fighters2',this)">カービィ ファイターズ２</button>
+                    <button class="accordion-item" onclick="openSection('discovery',this)">星のカービィ ディスカバリー</button>
+                    <button class="accordion-item" onclick="openSection('gourmet',this)">カービィのグルメフェス</button>
+                    <button class="accordion-item" onclick="openSection('deluxe',this)">星のカービィ Wiiデラックス</button>
+                    <button class="accordion-item" onclick="openSection('air-rider',this)">カービィのエアライダー</button>
+                </div>
 
                 <button class="sidebar-btn" onclick="window.open('movie.html','_blank')">
                     <span class="material-symbols-outlined">
@@ -52,7 +62,7 @@
                 <h1 class="title">閲覧いただきありがとうございます！</h1>
                 <div>このサイトでは、Nintendo Switchで遊べるカービィの作品や、</div>
                 <div>カービィというキャラクターの魅力についてご紹介しています。</div>
-                <div>カービィの世界をもっと知りたい方は、ぜひほかのページもご覧ください！</div>
+                <div>カービィの世界をもっと知りたい方は、ぜひ他のページもご覧ください！</div>
 
                 <div class="section-title">
                     <div class="line"></div>
@@ -78,9 +88,35 @@
                 <h1>カービィってなに？</h1>
             </section>
 
-            <section class="page" id="list">
-                <h1>作品一覧</h1>
+            <section class="page" id="star-arise">
+                <h1>星のカービィ スターアライズ</h1>
             </section>
+
+            <section class="page" id="hunters">
+                <h1>スーパーカービィ ハンターズ</h1>
+            </section>
+
+            <section class="page" id="fighters2">
+                <h1>カービィ ファイターズ２</h1>
+            </section>
+
+            <section class="page" id="discovery">
+                <h1>星のカービィ ディスカバリー</h1>
+            </section>
+
+            <section class="page" id="gourmet">
+                <h1>カービィのグルメフェス</h1>
+            </section>
+
+            <section class="page" id="deluxe">
+                <h1>星のカービィ Wiiデラックス</h1>
+            </section>
+
+            <section class="page" id="air-rider">
+                <h1>カービィのエアライダー</h1>
+            </section>
+
+
 
         </main>
 

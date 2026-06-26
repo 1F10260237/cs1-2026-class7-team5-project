@@ -13,10 +13,18 @@ function openSection(id,button) {
     sidebarButtonActive(button);
 }
 
-function sidebarButtonActive(button) {
-    document.querySelectorAll(".sidebar-btn").forEach(btn => {
-        btn.classList.remove("active");
-    });
+function sidebarButtonActive(button){
+
+    document.querySelectorAll(".sidebar-btn,.accordion-item").forEach(btn=>{
+            btn.classList.remove("active");
+        });
 
     button.classList.add("active");
+}
+function openAccordionMenu(button){
+    const menu = document.querySelector(".accordion-menu");
+
+    menu.classList.toggle("open");
+
+    button.querySelector(".arrow").classList.toggle("rotate");
 }
