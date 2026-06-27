@@ -115,7 +115,7 @@ body{
 .accordion-item.active{
     background:white;
     color:hotpink;
-    transform: translateX(10px);
+    transform: translateX(5px);
 }
 
 .material-symbols-outlined{
@@ -166,6 +166,22 @@ body{
     align-items: center;
     gap: 20px;
     margin: 40px 0;
+}
+
+.top-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:40px;
+}
+
+.top-text{
+    flex:1;
+}
+
+.top-header img{
+    width:200px;
+    margin-top:10px;
 }
 
 .section-title h2{
