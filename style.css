@@ -1,5 +1,6 @@
 body{
     margin:0;
+    overflow: hidden;
 }
 
 .container{
@@ -11,13 +12,17 @@ body{
 }
 
 .sidebar{
-    width:300px;
+    min-width:285px;
     height:100vh;
 
     overflow-y:auto;
     overflow-x: hidden;
 
     background:hotpink;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .sidebar-title{
@@ -66,7 +71,7 @@ body{
 .sidebar-btn.active{
     background:white;
     color:hotpink;
-    transform: translateX(10px);
+    transform: translateX(5px);
 }
 
 .accordion-menu{
@@ -76,7 +81,7 @@ body{
     max-height:0;
     overflow:hidden;
 
-    transition:max-height 0.6s ease;
+    transition:0.6s;
 }
 
 .accordion-menu.open{
@@ -97,7 +102,7 @@ body{
     border-radius:10px;
     background: none;
     color: white;
-    font-size: 17px;
+    font-size: 16px;
 
     cursor: pointer;
     transition: 0.3s;
@@ -181,4 +186,50 @@ body{
     color: hotpink;
     font-size: 24px;
     margin: 0 8px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+
+    gap: 30px;
+}
+
+.card{
+    width: 220px;
+
+    background: rgb(255, 231, 235);
+
+    border-radius: 20px;
+
+    padding:25px;
+
+    text-align: center;
+
+    transition: 0.2s;
+}
+
+.card:hover{
+    transform: translateY(-6px);
+}
+
+.card i{
+    font-size: 25px;
+    color: #ff8fc8;
+}
+
+.card h3{
+    font-size:21px;
+}
+
+.card p{
+    line-height: 1.7;
+}
+
+.card-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
 }

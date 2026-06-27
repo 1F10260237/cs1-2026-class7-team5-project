@@ -4,6 +4,14 @@ function removeOpen() {
     });
 }
 
+function closeAccordionMenu() {
+    const menu = document.querySelector(".accordion-menu");
+    const arrow = document.querySelector(".sidebar-btn .material-symbols-outlined");
+
+    menu.classList.remove("open");
+    arrow.classList.remove("rotate");
+}
+
 function openSection(id,button) {
     removeOpen();
 
@@ -11,6 +19,10 @@ function openSection(id,button) {
     top.classList.add("open");
 
     sidebarButtonActive(button);
+
+    if (id === "top" || id === "detail") {
+    closeAccordionMenu();
+    };
 }
 
 function sidebarButtonActive(button){
@@ -21,6 +33,7 @@ function sidebarButtonActive(button){
 
     button.classList.add("active");
 }
+
 function openAccordionMenu(button){
     const menu = document.querySelector(".accordion-menu");
 
