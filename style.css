@@ -195,6 +195,7 @@ body{
 }
 
 .section-title h2{
+    display:flex;
     white-space:nowrap;
 
     font-size:20px;
@@ -293,9 +294,68 @@ body{
 }
 
 .character-card:hover{
-    transform:translateY(-8px);
+    transform:translateY(-6px);
 }
 
 .character-card img.ddd{
-    width:140px;
+    width:90px;
+}
+
+.recommend{
+    display:flex;
+    justify-content:center;
+    gap:24px;
+    flex-wrap:wrap;
+}
+
+.box{
+    width:220px;
+    min-height:170px;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    transition:0.2s;
+}
+
+.box:hover{
+    transform:translateY(-6px);
+}
+
+.box div{
+    font-size:20px;
+    font-weight:bold;
+
+    margin-bottom:15px;
+}
+
+.-text{
+    font-size:15px;
+    line-height:1.6;
+}
+
+.-character{
+    background:#e0ffd5;
+    color:#2e8b57;
+}
+
+.-action{
+    background:#ffd5d5;
+    color:#ff4949;
+}
+
+.-enjoy{
+    background:#fff7e1;
+    color:#ffe100;
+}
+
+.-world{
+    background:#ecfdff;
+    color:#00d9ff;
+}
+
+.-text{
+    color:#666;
+    font-size:15px;
 }
