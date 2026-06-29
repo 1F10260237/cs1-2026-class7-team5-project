@@ -3,6 +3,11 @@ body{
     overflow:hidden;
 }
 
+body#movie{
+    margin:0;
+    overflow:auto;
+}
+
 .container{
     display:flex;
 }
@@ -163,6 +168,19 @@ body{
     padding-bottom:15px;
 
     margin-bottom:20px;
+}
+
+.title2{
+    font-size:25px;
+    font-weight:bold;
+
+    display:inline-block;
+
+    border-bottom:5px dotted #f7a2c8;
+
+    padding-bottom:5px;
+
+    margin-bottom:5px;
 }
 
 .section-title{
