@@ -21,7 +21,7 @@ body{
     background:hotpink;
 }
 
-::-webkit-scrollbar {
+.sidebar::-webkit-scrollbar {
     display:none;
 }
 
@@ -43,6 +43,7 @@ body{
 .sidebar-btn{
     display:flex;
     align-items:center;
+
     gap:10px;
 
     width:95%;
@@ -143,7 +144,6 @@ body{
 
 .main{
     flex:1;
-
     height:100vh;
     overflow-y:auto;
 
