@@ -134,7 +134,7 @@ body{
 
     border-radius:10px;
 
-    padding:20px;
+    padding:40px;
 }
 
 .page.open{
@@ -264,6 +264,38 @@ body{
     margin-bottom:15px;
 }
 
-.card img{
-    width:120px;
+.character-card{
+    width:210px;
+    height:200px;
+
+    padding:15px;
+
+    background:#fff3f7;
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.25s;
+}
+
+.character-card img{
+    width:100px;
+    margin-bottom:15px;
+}
+
+.character-card h3{
+    margin:10px 0;
+}
+
+.character-card div{
+    color:#666;
+    font-size:15px;
+}
+
+.character-card:hover{
+    transform:translateY(-8px);
+}
+
+.character-card img.ddd{
+    width:140px;
 }
