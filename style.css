@@ -1,6 +1,6 @@
 body{
     margin:0;
-    overflow:hidden;
+    overflow:auto;
 
     font-family: "M PLUS Rounded 1c";
     font-weight: 400;
@@ -31,6 +31,7 @@ body{
 
 .sidebar-title-wraper{
     text-align:center;
+    background:deepPink;
 }
 
 .sidebar-title{
@@ -275,6 +276,80 @@ body{
     margin:0 8px;
 }
 
+.gallery{
+    width:330px;
+    flex-shrink:0;
+
+    padding:20px;
+
+    background:#fff8fb;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+    position:sticky;
+    top:30px;
+}
+
+.gallery-title{
+    background:#ffd9ea;
+    padding:10px 16px;
+    border-radius:12px;
+
+    font-weight:bold;
+    color:deeppink;
+
+    display:inline-block;
+    margin-bottom:18px;
+}
+
+.kerby-detail{
+    margin-bottom:40px;
+    display:flex;
+}
+
+.kerby-detail-explain{
+    flex:1;
+    line-height:2.2;
+
+    min-width:0;
+}
+
+.img-scroller{
+    display:flex;
+    gap:15px;
+
+    overflow-x:auto;
+    overflow-y:hidden;
+
+    scroll-snap-type:x mandatory;
+    scroll-behavior:smooth;
+
+    padding-bottom:10px;
+}
+
+.img-scroller::-webkit-scrollbar {
+    display:none;
+}
+
+.img-scroller img{
+    width:290px;
+    height:200px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    flex-shrink:0;
+
+    scroll-snap-align:center;
+
+    transition:.25s;
+}
+
+.img-scroller img:hover{
+    transform:scale(1.03);
+}
+
 .card-container{
     display:flex;
     justify-content:center;
@@ -297,7 +372,8 @@ body{
 }
 
 .card:hover{
-    transform:translateY(-6px);
+    transform:translateY(-6px) scale(1.03);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
 }
 
 .card i{
@@ -348,7 +424,8 @@ body{
 }
 
 .character-card:hover{
-    transform:translateY(-6px);
+    transform:translateY(-6px) scale(1.03);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
 }
 
 .character-card img.ddd{
@@ -356,7 +433,7 @@ body{
 }
 
 .character-card img.wad{
-    width:90px;
+    width:110px;
 }
 
 .recommend{
@@ -380,7 +457,8 @@ body{
 }
 
 .box:hover{
-    transform:translateY(-6px);
+    transform:translateY(-6px) scale(1.03);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
 }
 
 .box div{
