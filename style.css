@@ -525,3 +525,8 @@ body{
     font-size:15px;
     color:#000000;
 }
+
+.movie{
+    background-color: #ffebf5;
+    margin-left: 10px;
+}
