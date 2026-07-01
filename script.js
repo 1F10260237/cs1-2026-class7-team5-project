@@ -1,14 +1,26 @@
-function openSection(id,button) {
-    closeSection();
+function openSection(id, button) {
 
-    const top = document.getElementById(id);
-    top.classList.add("open");
+    const current = document.querySelector(".page.open");
+
+    current.classList.add("fade-out");
+
+    setTimeout(() => {
+
+        current.classList.remove("open","fade-out");
+
+        const next = document.getElementById(id);
+
+        next.classList.add("open");
+        next.classList.add("fade-in");
+
+    },200);
 
     sidebarButtonActive(button);
 
-    if (id === "top" || id === "detail") {
-    closeAccordionMenu();
-    };
+    if(id === "top" || id === "detail"){
+        closeAccordionMenu();
+    }
+
 }
 
 function closeSection() {

@@ -3,6 +3,7 @@ body{
     overflow:hidden;
 
     font-family: "M PLUS Rounded 1c";
+    font-weight: 400;
 }
 
 .container{
@@ -153,6 +154,34 @@ body{
 
 .page.open{
     display:block;
+}
+
+.fade-in{
+    animation:fadeIn .35s;
+}
+
+.fade-out{
+    animation:fadeOut .35s;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeOut{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity:0;
+    }
 }
 
 .main{
@@ -370,11 +399,6 @@ body{
 }
 
 .-enjoy{
-    background:#fff7e1;
-    color:#ffe100;
-}
-
-.-world{
     background:#ecfdff;
     color:#00d9ff;
 }
@@ -385,14 +409,18 @@ body{
     line-height:1.6;
 }
 
-.attention{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.attention {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 
-    background:rgb(255, 231, 235);
+  background: linear-gradient(135deg, #ffe6ef, #fff3f7);
+  padding: 24px 28px;
+  margin: 40px 20px;
 
-    padding:20px;
+  border-radius: 20px;
+
+  border: 2px solid #ffd3e8;
 }
 
 .attention img{
@@ -402,7 +430,20 @@ body{
     width:100px;
 }
 
-.attention-direction{
-    display:flex;
-    flex-direction:column;
+.attention-text-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: hotpink;
+  letter-spacing: 0.5px;
+}
+
+.attention-direction {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.attention-text{
+    font-size:15px;
+    color:#000000;
 }
