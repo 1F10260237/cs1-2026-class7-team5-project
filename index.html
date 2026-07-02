@@ -155,28 +155,42 @@
                     </div>
 
                     <div class="gallery">
-                        <div class="galley-title">
+
+                        <div class="gallery-title">
                             <i class="fa-solid fa-star"></i>
-                            <h3>カービィのいろいろな表情</h3>
+                            カービィのいろいろな表情
                         </div>
 
-                        <div class="img-scroller">
-                            <img src="kirby_file/20260630205529-01KWC1EGVE5ZZGATH1FPGS8Q94-2.jpg" alt="">
-                            <img src="kirby_file/20260630193522-01KWBZR2N9NR0C7XEYW0PBY646-2.jpg" alt="">
-                            <img src="kirby_file/20260630193522-01KWC1ENG9FHQT1RCMYES9WE9W-2.jpg" alt="">
-                            <img src="kirby_file/20260630193522-01KWC0T1RRZ26G7RZ3WN8653RA.jpg" alt="">
-                            <img src="kirby_file/20260628154435-01KVYA67GENS6GZY5QM8D859DV.jpg" alt="">
-                            <img src="kirby_file/20260630190248-01KWBZGRMTT2MQB6C09M38MYWJ.jpg" alt="">
-                            <img src="kirby_file/20260630230451-01KWCDE86MAWSD96QJJFYZAW1B.jpg" alt="">                            
-                            <img src="kirby_file/20260630190248-01KWBZKRD8GRQ6QNZ1YDSF49FX.jpg" alt="">
-                            <img src="kirby_file/20260630190248-01KWBZKKVFY7GQSKXCN8B3F2E9.jpg" alt="">
-                            <img src="kirby_file/20260630190248-01KWBZKFC1K7WKCCACT9DNPJ9Y.jpg" alt="">
-                            <img src="kirby_file/20260630233008-01KWCEYZ4MR5JFM8N2GP39W4T6.jpg" alt="">
-                            <img src="kirby_file/20260630231252-01KWBZMBTS6DK7T9JA9TH25J2G.jpg" alt="">
-                            <img src="kirby_file/20260630231559-01KVY9ZNTMBEB327T2DJ7YM638.jpg" alt="">
-                            <img src="kirby_file/20260630232032-01KWBZJGVE513HZQ8YXB5Y524W.jpg" alt="">
-                            <img src="kirby_file/20260630190248-01KWBZH64VKDKPYSPVJKB4KYHA.jpg" alt=""> 
-                        </div>                   
+                        <div class="slider">
+
+                            <button class="prev" onclick="changeSlide(-1)">
+                                ❮
+                            </button>
+
+                            <div class="slides">
+
+                                <img class="slide active" src="kirby_file/20260630205529-01KWC1EGVE5ZZGATH1FPGS8Q94-2.jpg">
+                                <img class="slide" src="kirby_file/20260630193522-01KWBZR2N9NR0C7XEYW0PBY646-2.jpg">
+                                <img class="slide" src="kirby_file/20260630193522-01KWC1ENG9FHQT1RCMYES9WE9W-2.jpg">
+                                <img class="slide" src="kirby_file/20260630193522-01KWC0T1RRZ26G7RZ3WN8653RA.jpg">
+
+                            </div>
+
+                            <button class="next" onclick="changeSlide(1)">
+                                ❯
+                            </button>
+
+                        </div>
+
+                        <div class="dots">
+
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+
+                        </div>
+
                     </div>
                 </div>
 
