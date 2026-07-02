@@ -31,21 +31,17 @@ body{
     display:none;
 }
 
-.sidebar-title-wraper{
-    text-align:center;
-    background:deepPink;
+.sidebar-title-wrapper{
+    height:75px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:deeppink;
 }
 
-.sidebar-title{
-    font-size:20px;
-
-    font-weight:bold;
-
-    color:white;
-
-    font-size:20px;
-
-    padding:10px;
+.sidebar-title-wrapper img{
+    width:170px;
 }
 
 .sidebar-btn-column{
